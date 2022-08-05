@@ -13,28 +13,28 @@
 
         if (empty($firstname)) {
             $_SESSION['error'] = 'กรุณากรอกชื่อ';
-            header("location: signin.php");
+            header("location: register.php");
         } else if (empty($lastname)) {
             $_SESSION['error'] = 'กรุณากรอกนามสกุล';
-            header("location: signin.php");
+            header("location: register.php");
         } else if (empty($email)) {
             $_SESSION['error'] = 'กรุณากรอกอีเมล';
-            header("location: signin.php");
+            header("location: register.php");
         } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $_SESSION['error'] = 'รูปแบบอีเมลไม่ถูกต้อง';
-            header("location: signin.php");
+            header("location: register.php");
         } else if (empty($password)) {
             $_SESSION['error'] = 'กรุณากรอกรหัสผ่าน';
-            header("location: signin.php");
+            header("location: register.php");
         } else if (strlen($_POST['password']) > 20 || strlen($_POST['password']) < 5) {
             $_SESSION['error'] = 'รหัสผ่านต้องมีความยาวระหว่าง 5 ถึง 20 ตัวอักษร';
-            header("location: signin.php");
+            header("location: register.php");
         } else if (empty($c_password)) {
             $_SESSION['error'] = 'กรุณายืนยันรหัสผ่าน';
-            header("location: signin.php");
+            header("location: register.php");
         } else if ($password != $c_password) {
             $_SESSION['error'] = 'รหัสผ่านไม่ตรงกัน';
-            header("location: signin.php");
+            header("location: register.php");
         } else {
             try {
 
@@ -60,7 +60,7 @@
                     header("location: signin.php");
                 } else {
                     $_SESSION['error'] = "มีบางอย่างผิดพลาด";
-                    header("location: signin.php");
+                    header("location: register.php");
                 }
 
             } catch(PDOException $e) {
