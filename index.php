@@ -48,7 +48,7 @@
                 <div class="masthead-subheading"></div>
                 <div class="masthead-heading text-uppercase"></div>
                 <a class="btn  btn-xl text-uppercase" href="#services" style="background-color: gray; color: black; font-family: 'Kanit', sans-serif;">สำหรับนักศึกษา</a><a style="padding-right: 80px;"></a>
-                <a class="btn  btn-xl text-uppercase" href="#services" style="background-color: blue; color: white; font-family: 'Kanit', sans-serif;">สำหรับผู้ใช้งาน/นายจ้าง</a>
+                <a class="btn  btn-xl text-uppercase" href="unijob_post.php" style="background-color: blue; color: white; font-family: 'Kanit', sans-serif;">สำหรับผู้ใช้งาน/นายจ้าง</a>
             </div>
         </header>
         <!-- Services-->
