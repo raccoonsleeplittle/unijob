@@ -407,7 +407,7 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>บริษัท  เซนติกา โกลบอล เทค จำกัด 
+              <a href="#!" class="text-white"></i>บริษัท  เซนติกา โกลบอล เทค จำกัด 
 39 หมู่ที่ 1 ถนน รังสิต - นครนายก 
 ตำบล คลองหก อำเภอคลองหลวง 
 ปทุมธานี 12110</a>
@@ -422,37 +422,19 @@
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Supply</a>
+              <a href="#!" class="text-white"></i>หน้าแรก</a>
             </li>
             <li>
-              <a href="#!" class="text-white"><i class="fas fa-backspace fa-fw fa-sm me-2"></i>Returns</a>
+              <a href="#!" class="text-white"></i>เกี่ยวกับ</a>
             </li>
             <li>
-              <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Regulations</a>
+              <a href="#!" class="text-white"></i>ข่าวสาร</a>
             </li>
             <li>
-              <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Privacy policy</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Publishing house</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-white">The BookStore</a>
+              <a href="#!" class="text-white"></i>รีวิว</a>
             </li>
             <li>
-              <a href="#!" class="text-white">123 Street</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">05765 NY</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white"><i class="fas fa-briefcase fa-fw fa-sm me-2"></i>Send us a book</a>
+              <a href="#!" class="text-white"></i>ดาวน์โหลด</a>
             </li>
           </ul>
         </div>
@@ -460,17 +442,41 @@
 
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Write to us</h5>
+          <h5 class="text-uppercase">ศูนย์ช่วยเหลือ</h5>
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>Help in purchasing</a>
+              <a href="#!" class="text-white">ติดต่อรา</a>
             </li>
             <li>
-              <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Check the order status</a>
+              <a href="#!" class="text-white">วิธีใช้งาน</a>
             </li>
             <li>
-              <a href="#!" class="text-white"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Join the newsletter</a>
+              <a href="#!" class="text-white">คำถามที่พบบ่อย</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">เงื่อนไขและข้อกำหนด</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">นโยบายความเป็นส่วนตัว</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">นโยบายการใช้ข้อมูลคุกกี้</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">ติดต่อเรา</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white"></i>ติดต่อสอบถาม</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"></i>ingo@unijob.co</a>
             </li>
           </ul>
         </div>
@@ -482,8 +488,8 @@
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2021 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      Copyright © www.unijob.com เพราะเราอยากให้นักศึกษามีรายได้และสามารถสำเร็จการศึกษาได้โดยไม่มีอุปสรรคทางด้านการเงิน คึดถึงงานคิดถึง Unijob
+      <a class="text-white" href="https://www.unijob.co/">Unijob.co</a>
     </div>
     <!-- Copyright -->
   </footer>
