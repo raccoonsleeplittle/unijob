@@ -310,7 +310,7 @@
             </div>
         </section>
 -->        <!-- Team-->
-<!--
+
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
@@ -354,13 +354,13 @@
                 </div>
             </div>
         </section>
--->        <!-- Clients-->
-<!--
+        <!-- Clients-->
+
         <div class="py-5">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="./img/Unijob2.png" alt="unijob.png" aria-label="Unijob Logo"style="width: 150px; height: auto;" /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
                         <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
@@ -374,7 +374,7 @@
                 </div>
             </div>
         </div>
--->    <!-- Contact-->
+    <!-- Contact-->
 <!--
         <section class="page-section" id="contact">
             <div class="container">
