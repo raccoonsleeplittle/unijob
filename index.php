@@ -403,11 +403,11 @@
       <div class="row mt-4">
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h1 class="text-uppercase">UNIJOB</h1>
+          <h1 class="text-uppercase" style="color:#4785ff">UNIJOB</h1>
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white"></i>บริษัท  เซนติกา โกลบอล เทค จำกัด 
+              <a></i>บริษัท  เซนติกา โกลบอล เทค จำกัด 
 39 หมู่ที่ 1 ถนน รังสิต - นครนายก 
 ตำบล คลองหก อำเภอคลองหลวง 
 ปทุมธานี 12110</a>
@@ -418,23 +418,23 @@
 
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h4 class="text-uppercase">เมนู</h4>
+          <h4 class="text-uppercase" style="font-family:'Kanit',sans-serif;">เมนู</h4>
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!" class="text-white"></i>หน้าแรก</a>
+              <a>หน้าแรก</a>
             </li>
             <li>
-              <a href="#!" class="text-white"></i>เกี่ยวกับ</a>
+              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">เกี่ยวกับ</a>
             </li>
             <li>
-              <a href="#!" class="text-white"></i>ข่าวสาร</a>
+              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">ข่าวสาร</a>
             </li>
             <li>
-              <a href="#!" class="text-white"></i>รีวิว</a>
+              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">รีวิว</a>
             </li>
             <li>
-              <a href="#!" class="text-white"></i>ดาวน์โหลด</a>
+              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">ดาวน์โหลด</a>
             </li>
           </ul>
         </div>
@@ -442,26 +442,26 @@
 
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">ศูนย์ช่วยเหลือ</h5>
+          <h5 class="text-uppercase" style="font-family:'Kanit',sans-serif;">ศูนย์ช่วยเหลือ</h5>
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!" class="text-white">ติดต่อรา</a>
+              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">ติดต่อรา</a>
             </li>
             <li>
-              <a href="#!" class="text-white">วิธีใช้งาน</a>
+              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">วิธีใช้งาน</a>
             </li>
             <li>
-              <a href="#!" class="text-white">คำถามที่พบบ่อย</a>
+              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">คำถามที่พบบ่อย</a>
             </li>
             <li>
-              <a href="#!" class="text-white">เงื่อนไขและข้อกำหนด</a>
+              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">เงื่อนไขและข้อกำหนด</a>
             </li>
             <li>
-              <a href="#!" class="text-white">นโยบายความเป็นส่วนตัว</a>
+              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">นโยบายความเป็นส่วนตัว</a>
             </li>
             <li>
-              <a href="#!" class="text-white">นโยบายการใช้ข้อมูลคุกกี้</a>
+              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">นโยบายการใช้ข้อมูลคุกกี้</a>
             </li>
           </ul>
         </div>
@@ -469,14 +469,29 @@
 
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">ติดต่อเรา</h5>
+          <h5 class="text-uppercase" style="font-family:'Kanit',sans-serif;">ติดต่อเรา</h5>
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!" class="text-white"></i>ติดต่อสอบถาม</a>
+              <a>ติดต่อสอบถามข้อมูลเพิ่มเติม</a>
             </li>
             <li>
-              <a href="#!" class="text-white"></i>ingo@unijob.co</a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-google"></i
+                ></a>
+            </li>
+            <li>
+              <a>Info@unijob.com</a>
             </li>
           </ul>
         </div>
@@ -487,9 +502,9 @@
     <!-- Grid container -->
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      Copyright © www.unijob.com เพราะเราอยากให้นักศึกษามีรายได้และสามารถสำเร็จการศึกษาได้โดยไม่มีอุปสรรคทางด้านการเงิน คึดถึงงานคิดถึง Unijob
-      <a class="text-white" href="https://www.unijob.co/">Unijob.co</a>
+    <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2)">
+      Copyright © www.unijob.com <br>เพราะเราอยากให้นักศึกษามีรายได้และสามารถสำเร็จการศึกษาได้โดยไม่มีอุปสรรคทางด้านการเงิน คึดถึงงานคิดถึง Unijob
+      <a class="text-secondary" href="https://www.unijob.com/">Unijob.com</a>
     </div>
     <!-- Copyright -->
   </footer>

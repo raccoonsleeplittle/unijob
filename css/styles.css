@@ -7712,6 +7712,11 @@ textarea.form-control-lg {
   white-space: nowrap !important;
 }
 
+.text-normal {
+    color: white;
+    font-family: 'Kanit' , sans-serif;
+}
+
 /* rtl:begin:remove */
 .text-break {
   word-wrap: break-word !important;
