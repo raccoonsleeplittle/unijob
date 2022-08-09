@@ -16,8 +16,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     </head>
     <body id="page-top" style="background-image: url('./img/bg-img.jpg');">
         <!-- Navigation-->
@@ -61,78 +61,81 @@
             </div>
         </header>
         
-
         <section class="page-section" id="information"> <!-- เปลี่ยนรูปได้จาก ID -->
-    <div class="container">
-        <div class="text-center">
-            <h2 style="font-family: 'Kanit', sans-serif;color:white;">ข่าวประชาสัมพันธ์จากแพลตฟอร์ม</h2>
-        </div>
-        <div class="row">
-            <div class="col-10 mx-auto">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="./img/new1.jpg" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./img/new2.jpg" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./img/new3.jpg" alt="Third slide">
+            <div class="container">
+                <div class="text-center">
+                    <h2 style="font-family: 'Kanit', sans-serif;color:white;">ข่าวประชาสัมพันธ์จากแพลตฟอร์ม</h2>
+                </div>
+                <div class="row">
+                    <div class="col-10 mx-auto">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./img/new1.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./img/new2.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./img/new3.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
-          
-</section>
+            </div>
+        </section>
 
-<section class="page-section" id="promotion">
-    <div class="container">
-        <div class="text-center">
-            <h1 style="font-family: 'Kanit', sans-serif;color:white;">โปรโมชั่นรายวัน</h1> 
-        </div>
-        <div class="row">
-            <div class="col-10 mx-auto">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="./img/new1.jpg" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./img/new2.jpg" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./img/new3.jpg" alt="Third slide">
+        <section class="page-section" id="promotion">
+            <div class="container">
+                <div class="text-center">
+                    <h1 style="font-family: 'Kanit', sans-serif;color:white;">โปรโมชั่นรายวัน</h1> 
+                </div>
+                <div class="row">
+                    <div class="col-10 mx-auto">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./img/new1.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./img/new2.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./img/new3.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
-          
-</section>
+            </div>
+        </section>
 
 
 <!-- End of .container -->
@@ -392,124 +395,109 @@
         </section>
 
 
-<!--footer-->
-<!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container my-5">
-
-  <footer class="bg-dark text-center text-lg-start text-white">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
-      <div class="row mt-4">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h1 class="text-uppercase" style="color:#4785ff">UNIJOB</h1>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a></i>บริษัท  เซนติกา โกลบอล เทค จำกัด 
-39 หมู่ที่ 1 ถนน รังสิต - นครนายก 
-ตำบล คลองหก อำเภอคลองหลวง 
-ปทุมธานี 12110</a>
-            </li>
-          </ul>
+        <!--footer-->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div class="container my-5">
+            <footer class="bg-dark text-center text-lg-start text-white">
+                <!-- Grid container -->
+                <div class="container p-4">
+                    <!--Grid row-->
+                    <div class="row mt-4">
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h1 class="text-uppercase" style="color:#4785ff">UNIJOB</h1>
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a>บริษัท  เซนติกา โกลบอล เทค จำกัด 
+                                            39 หมู่ที่ 1 ถนน รังสิต - นครนายก 
+                                            ตำบล คลองหก อำเภอคลองหลวง 
+                                            ปทุมธานี 12110
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h4 class="text-uppercase" style="font-family:'Kanit',sans-serif;">เมนู</h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a>หน้าแรก</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:white;font-family:'Kanit',sans-serif;">เกี่ยวกับ</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:white;font-family:'Kanit',sans-serif;">ข่าวสาร</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:white;font-family:'Kanit',sans-serif;">รีวิว</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:white;font-family:'Kanit',sans-serif;">ดาวน์โหลด</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase" style="font-family:'Kanit',sans-serif;">ศูนย์ช่วยเหลือ</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" style="color:white;font-family:'Kanit',sans-serif;">ติดต่อรา</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:white;font-family:'Kanit',sans-serif;">วิธีใช้งาน</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:white;font-family:'Kanit',sans-serif;">คำถามที่พบบ่อย</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:white;font-family:'Kanit',sans-serif;">เงื่อนไขและข้อกำหนด</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:white;font-family:'Kanit',sans-serif;">นโยบายความเป็นส่วนตัว</a>
+                                </li>
+                                <li>
+                                    <a href="#" style="color:white;font-family:'Kanit',sans-serif;">นโยบายการใช้ข้อมูลคุกกี้</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase" style="font-family:'Kanit',sans-serif;">ติดต่อเรา</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a>ติดต่อสอบถามข้อมูลเพิ่มเติม</a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <!-- Twitter -->
+                                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <!-- Google -->
+                                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                                        <i class="fab fa-google"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>Info@unijob.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Grid container -->
+                <!-- Copyright -->
+                <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2)">
+                    Copyright © www.unijob.com <br>เพราะเราอยากให้นักศึกษามีรายได้และสามารถสำเร็จการศึกษาได้โดยไม่มีอุปสรรคทางด้านการเงิน คึดถึงงานคิดถึง Unijob
+                    <a class="text-secondary" href="https://www.unijob.com/">Unijob.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h4 class="text-uppercase" style="font-family:'Kanit',sans-serif;">เมนู</h4>
-
-          <ul class="list-unstyled">
-            <li>
-              <a>หน้าแรก</a>
-            </li>
-            <li>
-              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">เกี่ยวกับ</a>
-            </li>
-            <li>
-              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">ข่าวสาร</a>
-            </li>
-            <li>
-              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">รีวิว</a>
-            </li>
-            <li>
-              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">ดาวน์โหลด</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase" style="font-family:'Kanit',sans-serif;">ศูนย์ช่วยเหลือ</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">ติดต่อรา</a>
-            </li>
-            <li>
-              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">วิธีใช้งาน</a>
-            </li>
-            <li>
-              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">คำถามที่พบบ่อย</a>
-            </li>
-            <li>
-              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">เงื่อนไขและข้อกำหนด</a>
-            </li>
-            <li>
-              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">นโยบายความเป็นส่วนตัว</a>
-            </li>
-            <li>
-              <a href="#" style="color:white;font-family:'Kanit',sans-serif;">นโยบายการใช้ข้อมูลคุกกี้</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase" style="font-family:'Kanit',sans-serif;">ติดต่อเรา</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a>ติดต่อสอบถามข้อมูลเพิ่มเติม</a>
-            </li>
-            <li>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                    ><i class="fab fa-facebook-f"></i>
-                </a>
-
-                <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                    ><i class="fab fa-twitter"></i
-                ></a>
-
-                <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                    ><i class="fab fa-google"></i
-                ></a>
-            </li>
-            <li>
-              <a>Info@unijob.com</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2)">
-      Copyright © www.unijob.com <br>เพราะเราอยากให้นักศึกษามีรายได้และสามารถสำเร็จการศึกษาได้โดยไม่มีอุปสรรคทางด้านการเงิน คึดถึงงานคิดถึง Unijob
-      <a class="text-secondary" href="https://www.unijob.com/">Unijob.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-
-</div>
 
 
 
@@ -595,30 +583,30 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                                                <!-- Project details-->
-
-                            <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+                                        <h2 class="text-uppercase">Project Name</h2>
+                                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <strong>Client:</strong>
+                                                Threads
+                                            </li>
+                                            <li>
+                                                <strong>Category:</strong>
+                                                Illustration
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close Project
-                                    </button>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -626,8 +614,8 @@
                 </div>
             </div>
         </div>
-                                <!-- Portfolio item 2 modal popup-->
 
+        <!-- Portfolio item 2 modal popup-->
                             <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
