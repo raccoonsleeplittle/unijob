@@ -63,7 +63,7 @@
         </header>
         
 
-        <section class="page-section" id="contact">
+        <section class="page-section" id="information"> <!-- เปลี่ยนรูปได้จาก ID -->
     <div class="container">
         <div class="text-center">
             <h2 style="font-family: 'Kanit', sans-serif;color:white;">ข่าวประชาสัมพันธ์จากแพลตฟอร์ม</h2>
@@ -99,10 +99,10 @@
           
 </section>
 
-<section class="page-section" id="contact">
+<section class="page-section" id="promotion">
     <div class="container">
         <div class="text-center">
-            <h2 style="font-family: 'Kanit', sans-serif;color:white;">ข่าวประชาสัมพันธ์จากแพลตฟอร์ม</h2>
+            <h1 style="font-family: 'Kanit', sans-serif;color:white;">โปรโมชั่นรายวัน</h1> 
         </div>
         <div class="row">
             <div class="col-10 mx-auto">
