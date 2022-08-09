@@ -448,7 +448,7 @@
             </div>
         </section>
                             -->        <!-- Footer-->
-<!--
+
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
@@ -465,9 +465,9 @@
                 </div>
             </div>
         </footer>
-                            -->        <!-- Portfolio Modals-->
+                                   <!-- Portfolio Modals-->
         <!-- Portfolio item 1 modal popup-->
-<!--
+
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -476,8 +476,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                            -->                                    <!-- Project details-->
-<!--
+                                                                <!-- Project details-->
+
                             <h2 class="text-uppercase">Project Name</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
@@ -503,8 +503,8 @@
                 </div>
             </div>
         </div>
-                            -->    <!-- Portfolio item 2 modal popup-->
-<!--
+                                <!-- Portfolio item 2 modal popup-->
+
                             <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -513,8 +513,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                            -->                                    <!-- Project details-->
-<!--
+                                                                <!-- Project details-->
+
                             <h2 class="text-uppercase">Project Name</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
@@ -540,8 +540,8 @@
                 </div>
             </div>
         </div>
-                            -->        <!-- Portfolio item 3 modal popup-->
-<!--
+                                    <!-- Portfolio item 3 modal popup-->
+
                             <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -550,8 +550,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                            -->                                    <!-- Project details-->
-<!--
+                                                                <!-- Project details-->
+
                             <h2 class="text-uppercase">Project Name</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
@@ -577,7 +577,7 @@
                 </div>
             </div>
         </div>
-                            -->        <!-- Portfolio item 4 modal popup-->
+                                    <!-- Portfolio item 4 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
