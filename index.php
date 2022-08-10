@@ -42,7 +42,7 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead" style="background-image: url('../../unijob/img/platform_.png');">
+        <header class="masthead" style="background-image: url('../../unijob/img/platform_.png');background-position: right center;">
             <div class="container">
                 <div class="masthead-heading text-uppercase">แพลตฟอร์มสำหรับหางานให้นักศึกษา</div>
                 <div  class="masthead-subheading">มีงานให้เลือกหลากหลายประเภทตามความสามารถ ความต้องการ และมีความปลอดภัย<br>ทำงานแบบระยะชั่วคราว แบบ Freelance โดยไม่ต้องห่วงเรื่องปัญหาเวลาในการศึกษาอีกต่อไป</div>
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </header>
-        <header class="masthead" style="background-image: url('./img/homeimg2.jpg');">
+        <header class="masthead" style="background-image: url('./img/homeimg2.jpg');background-position: right center;">
             <div class="container">
                 <div style="padding-left:80px;">
                     <a class="btn  btn-xl text-uppercase" href="#services" style="background-color: gray; color: black; font-family: 'Kanit', sans-serif;border-radius:120px;">ศึกษาวิธีการใช้งาน</a><a style="padding-right: 80px;"></a>
@@ -68,11 +68,11 @@
                 </div>
                 <div class="row">
                     <div class="col-10 mx-auto">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div id="Information" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#Information" data-slide-to="0" class="active"></li>
+                                <li data-target="#Information" data-slide-to="1"></li>
+                                <li data-target="#Information" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -85,11 +85,11 @@
                                     <img class="d-block w-100" src="./img/new3.jpg" alt="Third slide">
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#Information" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#Information" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -106,11 +106,11 @@
                 </div>
                 <div class="row">
                     <div class="col-10 mx-auto">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div id="promotion" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#promotion" data-slide-to="0" class="active"></li>
+                                <li data-target="#promotion" data-slide-to="1"></li>
+                                <li data-target="#promotion" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -123,11 +123,11 @@
                                     <img class="d-block w-100" src="./img/new3.jpg" alt="Third slide">
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#promotion" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#promotion" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -137,6 +137,29 @@
             </div>
         </section>
 
+        <header class="masthead" style="background-image: url('./img/HomeImg3.jpg');background-position: right center;">
+            <div class="container">
+                <div class="masthead-heading text-uppercase">
+                    นึกถึงคนแก้ปัญหาสำหรับคุณ<br>นึกถึง UNI<a style="color:#513ABF;">JOB</a> สิครับ</div>
+                    <a class="btn  btn-xl text-uppercase" href="#services" style="background-color: #513ABF; color: black; font-family: 'Kanit', sans-serif;border-radius:120px">ไปหน้าเกียวกับเรา</a>
+            </div>
+        </header>
+        <header class="masthead" style="background-image: url('./img/homeImg4-1.jpg');background-position: right center;">
+            <div class="container">
+                <div class="masthead-heading text-uppercase">
+                    แพลตฟอร์มนี้ปลอดภัย ดำเนินการทำงานด้วย<br>นักศึกษาปฏิบัติงาน มั่นใจ ปลอดภัย หายห่วง
+                </div>
+            </div>
+        </header>
+        <header class="masthead" style="background-image: url('./img/homeImg4-2.jpg');background-position: left center;">
+            <div class="container">
+                <div class="masthead-heading text-uppercase" style="text-align:right;padding-left:300px">
+                    <div style="text-align:center;">"แพลตฟอร์มที่สร้างขึ้นมาเพื่อช่วยให้นักศึกษา"</div>
+                    <div style="text-align:center;">สำเร็จการศึกษาโดยปราศจากปัญหา</div>
+                    <div style="text-align:center;">ทางด้านการเงิน</div>
+                </div>
+            </div>
+        </header>
 
 <!-- End of .container -->
 
