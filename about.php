@@ -49,7 +49,9 @@
                 <header class="masthead">
             <div class="container" style="text-align: center;">
                 <div class="masthead-heading text-uppercase" style="text-align: center;">About</div>
-                <div  class="masthead-subheading " style="text-align: center;">มีงานให้เลือกหลากหลายประเภทตามความสามารถ ความต้องการ และมีความปลอดภัย<br>ทำงานแบบระยะชั่วคราว แบบ Freelance โดยไม่ต้องห่วงเรื่องปัญหาเวลาในการศึกษาอีกต่อไป</div>
+                <div  class="masthead-subheading " style="text-align: center;">เนื่องจากเราได้มองเห็นปัญหา ณ ปัจจุบัน ที่มีทั้งค่าครองชีพที่สูงและอีกทั้งยังมีเศรษฐกิจที่ย่ำแย่ จนส่งผลกระทบทางด้านการเงินต่อครอบครัวของนักศึกษาจึงทำให้เราเกิด
+คอนเซ็ปต์ไอเดียที่อยากให้นักศึกษามีรายได้และสามารถสำเร็จการศึกษา
+ได้โดยไม่มีอุปสรรคทางด้านการเงิน</div>
             </div>
         </header>
 
