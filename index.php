@@ -20,6 +20,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     </head>
     <body id="page-top" style="background-image: url('./img/bg-img.jpg');">
+    
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -36,7 +37,8 @@
                         <li class="nav-item"><a class="nav-link" href="#about" style="font-family: 'Kanit', sans-serif;">ข่าวสาร</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team" style="font-family: 'Kanit', sans-serif;">รีวิว</a></li>
                         <li class="nav-item"><a class="nav-link" href="register.php" style="font-family: 'Kanit', sans-serif;">สมัครสมาชิก</a></li>
-                        <li class="nav-item"><a class="nav-link" href="signin.php" style="font-family: 'Kanit', sans-serif;">เข้าสู่ระบบ</a></li>
+                        <li class="nav-item"><button type="button" class="btn btn-info btn-round" style="font-family: 'Kanit', sans-serif;" data-toggle="modal" data-target="#loginModal">เข้าสู่ระบบ</button></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -278,6 +280,47 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
-    
+        
+        
+        <script>
+            $(document).ready(function() 
+            {             
+                $(function () 
+                {
+                    $('[data-toggle="tooltip"]').tooltip()
+                })
+            });
+        </script>
+
+
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4 style="font-family: 'Kanit', sans-serif;">เข้าสู่ระบบ</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                            <div class="form-group" style="text-align:left;">
+                                <a style="font-family: 'Kanit', sans-serif;">บัญชีผู้ใช้งาน</a>
+                                <input type="email" class="form-control" id="username"placeholder="บัญชีผู้ใช้งาน">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password" placeholder="รหัสผ่าน">
+                            </div>
+                            <button type="button" class="btn btn-info btn-block btn-round">เข้าสู่ระบบ</button>
+                        </form>
+                    </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section">ยังไม่ได้เป็นสมาชิกในระบบ ?<a href="#a" class="text-info"> สมัครสมาชิก</a>.</div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
