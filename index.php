@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#services" style="font-family: 'Kanit', sans-serif;">หน้าแรก</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio " style="font-family: 'Kanit', sans-serif;">เกี่ยวกับ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.php" style="font-family: 'Kanit', sans-serif;">เกี่ยวกับ</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about" style="font-family: 'Kanit', sans-serif;">ข่าวสาร</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team" style="font-family: 'Kanit', sans-serif;">รีวิว</a></li>
                         <li class="nav-item"><a class="nav-link" href="register.php" style="font-family: 'Kanit', sans-serif;">สมัครสมาชิก</a></li>
@@ -322,5 +322,6 @@
                 </div>
             </div>
         </div>
+        
     </body>
 </html>
