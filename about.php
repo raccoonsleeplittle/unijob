@@ -55,11 +55,15 @@
 คอนเซ็ปต์ไอเดียที่อยากให้นักศึกษามีรายได้และสามารถสำเร็จการศึกษา<br>
 ได้โดยไม่มีอุปสรรคทางด้านการเงิน</div>
             </div>
-            <section class="page-section" id="promotion">
+
+
+            <section class="page-section">
             <div class="container">
                 <div class="text-center">
-                    <h1 style="font-family: 'Kanit', sans-serif;color:white;">โปรโมชั่นรายวัน</h1> 
+                <!--    
+                <h1 style="font-family: 'Kanit', sans-serif;color:white;">โปรโมชั่นรายวัน</h1> 
                 </div>
+-->
                 <div class="row">
                     <div class="col-10 mx-auto">
                         <div id="promotion" class="carousel slide" data-ride="carousel">
@@ -93,11 +97,14 @@
             </div>
         </section>
 
-        <section class="page-section" id="promotion">
+
+        <section class="page-section">
             <div class="container">
                 <div class="text-center">
-                    <h1 style="font-family: 'Kanit', sans-serif;color:white;">โปรโมชั่นรายวัน</h1> 
+                <!--    
+                <h1 style="font-family: 'Kanit', sans-serif;color:white;">โปรโมชั่นรายวัน</h1> 
                 </div>
+-->
                 <div class="row">
                     <div class="col-10 mx-auto">
                         <div id="promotion" class="carousel slide" data-ride="carousel">
