@@ -47,8 +47,8 @@
             </div>
         </nav>
 
-
-        <header class="masthead" style="background-image: url('./img/HomeImg3-1.jpg');background-position: right center;">
+    <!--แก้-->
+        <header class="masthead" style="background-image: url('./img/main01111.jpg'); background-position: center center; height: 700px;">
             <div class="container">
                 <div class="masthead-heading text-uppercase" style="text-align: center;">News</div>
                 </div>
@@ -62,8 +62,13 @@
 
         <header class="masthead" style="background-image: url('../../unijob/img/bg-img.jpg');background-position: right center;">
             <div class="container">
-                <div class="masthead-heading text-uppercase" style="text-align: center;">News</div>
+                <div style="text-align: center; padding: 20px">
+                    <h2>รวมช่องทางลงทะเบียนฉีดวัคซีนโควิด ผ่าน 4 ค่ายมือถือ เริ่มจอง 29 ก.ค.นี้</h2>
                 </div>
+                <div style="text-align: center;">
+                <h4>ศูนย์ฉีดวัคซีนกลางบางชื่อ เปิดให้ประชาชนลงทะเบียนจองคิวฉีดวัคซีนป้องกันโควิด-19 ผ่าน 4 ค่ายมือถือ ระยะเวลาฉีดวัคซีน ตั้งแต่วันที่ 1-31 สิงหาคม 2564 ลงทะเบียนได้ที่ : 1. AIS ลงทะเบียนได้ที่เว็บไซต์</h4>
+                </div>                
+            </div>
             </div>
         </header>
 
