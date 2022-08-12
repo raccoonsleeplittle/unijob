@@ -4,57 +4,141 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-    <div class="row">
-        <form action="">
-        <div class="form-group">
-        <div class="col-md-6 mb-3">
-    <label for="exampleFormControlSelect1">Example select</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>คอมพิวเตอร์</option>
-      <option>ฝากซื้อ</option>
-      <option>งานเอกสาร</option>
-    </select>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">Hidden brand</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </div>
-  <div class="col-md-6 mb-3">
-      <label for="validationCustom01">ราคาจ้าง</label>
-      <input type="text" class="form-control" id="validationCustom01" value="" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-      <div class="custom-control custom-radio">
-  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+  </div>
+</nav>
+
+<br>
+<br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+  <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active">
+    สั่งงาน
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">สถานะงาน</a>
+  <a href="#" class="list-group-item list-group-item-action">ประวัติการสั่งงาน</a>
+  <a href="#" class="list-group-item list-group-item-action">ยอดเงินในเครดิต</a>
+  <a href="#" class="list-group-item list-group-item-action disabled">ติดต่อเจ้าหน้าที่</a>
+  </div>
 </div>
-<div class="custom-control custom-radio">
-  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-  <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+<div class="col-9">
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">กรอกรายละเอียดงาน</label>
+    <div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
 </div>
-<div class="col-md-6 mb-3">
-      <label for="validationCustom01">ชื่อผู้จ้าง</label>
-      <input type="text" class="form-control" id="validationCustom01" value="" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-<div class="col-md-6 mb-3">
-      <label for="validationCustom01">ใช้โค้ดโปรโมชั่น</label>
-      <input type="text" class="form-control" id="validationCustom01" value="" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-      <div class="col-md-6 mb-3">
-      <label for="validationCustom01">Enter a phone number:</label>
-      <input type="text" class="form-control" id="validationCustom01" value="" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-        </form>
+<br>
+<div class="row">
+  <div class="col-6">
+  <label for="exampleInputPassword1">ประเภทงาน</label>
+<select class="form-control">
+  <option>งานทั่วไป</option>
+  <option>งานไอที</option>
+  <option>งานพิมเอกสาร</option>
+</select>
+</div>
+<div class="col-6">
+<label for="exampleInputPassword1">ราคาจ้าง</label>
+<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+</div>
+</div>
+<br>
+<label for="exampleInputPassword1">รูปแบบงาน</label>
+<fieldset class="form-group">
+    <div class="row">
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            งานตอนนี้
+          </label>
         </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            งานระยะยาว
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            งานล่วงหน้าภายในวัน
+          </label>
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </fieldset>
+  <div class="row">
+  <div class="col-6">
+    <label for="exampleInputPassword1">ชื่อผู้จ้าง</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="กรุณากรอกชื่อผู้จ้าง">
+  </div>
+  <div class="col-6">
+    <label for="exampleInputPassword1">ใช้โค๊ดโปรโมชั้น</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="กรุณากรอกชื่อผู้จ้าง">
+  </div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-6">
+  <label for="exampleInputPassword1">เบอร์ติดต่อ</label>
+    <input type="input" class="form-control"  placeholder="กรุณากรอกเบอร์ติดต่อ">
+  </div>
+  </div>
+  <br>
+  <div class="row">
+  <div class="col-6">
+  <label for="exampleFormControlTextarea1">รายละเอียดงานเพิ่มเติม</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  </div>
+  <br>
+  <div class="row">
+  <div class="col-6">
+  <label for="exampleFormControlTextarea1">สถานที่ทำงาน</label>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.67256830534!2d100.72485546483372!3d14.037412940163145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d78a4a8713c3f%3A0xf019238243532a0!2sRajamangala%20University%20of%20Technology%20Thanyaburi!5e0!3m2!1sen!2sth!4v1660283801746!5m2!1sen!2sth" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
+</div>
+
+
+     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
   
 
 </body>
