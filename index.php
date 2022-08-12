@@ -78,13 +78,13 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="./img/new1.jpg" alt="First slide">
+                                   <a href="./news.php"><img class="d-block w-100" src="./img/new1.jpg" alt="First slide" ></a> 
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="./img/new2.jpg" alt="Second slide">
+                                   <a href="#"><img class="d-block w-100" src="./img/new2.jpg" alt="Second slide"></a>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="./img/new3.jpg" alt="Third slide">
+                                   <a href="#"><img class="d-block w-100" src="./img/new3.jpg" alt="Third slide"></a>
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#Information" role="button" data-slide="prev">
