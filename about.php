@@ -67,7 +67,7 @@
                     <div class="container">
                         <div class="masthead-subheading" style="text-align: center;font-size:25px;">มีงานให้เลือกทำหลายรูปเเบบหลายลักษณะตามความถนัดของนักศึกษาเเละเลือกเวลาได้อย่างอิสระ</div>
                         <div style="padding-left:80px;text-align:center;">
-                            <a class="btn  btn-xl text-uppercase" href="#services" style="background-color: gray; color: black; font-family: 'Kanit', sans-serif;">สำหรับนักศึกษา</a>
+                            <a class="btn  btn-xl text-uppercase" href="./unijob_post.php" style="background-color: gray; color: black; font-family: 'Kanit', sans-serif;">เริ่มหางานได้เลย</a>
                         </div>
                     </div>
                 </header>
