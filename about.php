@@ -28,7 +28,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <!-- <a class="navbar-brand" href="#page-top"></a> -->
-                <a href="#page-top"><img src="./img/Logo.png" alt="..." width="100px" /></a>    
+                <a href="./index.php"><img src="./img/Logo.png" alt="..." width="100px" /></a>    
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -37,8 +37,8 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#services" style="font-family: 'Kanit', sans-serif;">หน้าแรก</a></li>
                         <li class="nav-item"><a class="nav-link" href="./about.php" style="font-family: 'Kanit', sans-serif;">เกี่ยวกับ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about" style="font-family: 'Kanit', sans-serif;">ข่าวสาร</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team" style="font-family: 'Kanit', sans-serif;">รีวิว</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./news.php" style="font-family: 'Kanit', sans-serif;">ข่าวสาร</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./review.php" style="font-family: 'Kanit', sans-serif;">รีวิว</a></li>
                         <li class="nav-item"><a class="nav-link" href="register.php" style="font-family: 'Kanit', sans-serif;">สมัครสมาชิก</a></li>
                         <li class="nav-item"><button type="button" class="btn btn-info btn-round" style="font-family: 'Kanit', sans-serif;" data-toggle="modal" data-target="#loginModal">เข้าสู่ระบบ</button></li>
                         
@@ -47,98 +47,23 @@
             </div>
         </nav>
                 <!-- Masthead-->
-                <header class="masthead">
-            <div class="container" style="text-align: center;">
-            <img src="./img/Logo.png" width="250px" height="auto" >
+                <header class="masthead" style="background-image: url('./img/main01111.jpg'); background-position: center center; height: 700px;">
                 <div class="masthead-heading text-uppercase" style="text-align: center;">About</div>
                 <div  class="masthead-subheading " style="text-align: center;font-size:25px; ">เนื่องจากเราได้มองเห็นปัญหา ณ ปัจจุบัน<br>ที่มีทั้งค่าครองชีพที่สูงและอีกทั้งยังมีเศรษฐกิจที่ย่ำแย่<br>จนส่งผลกระทบทางด้านการเงินต่อครอบครัวของนักศึกษาจึงทำให้เราเกิด<br>
 คอนเซ็ปต์ไอเดียที่อยากให้นักศึกษามีรายได้และสามารถสำเร็จการศึกษา<br>
 ได้โดยไม่มีอุปสรรคทางด้านการเงิน</div>
             </div>
+                </header>
 
 
-            <section class="page-section">
-            <div class="container">
-                <div class="text-center">
-                <!--    
-                <h1 style="font-family: 'Kanit', sans-serif;color:white;">โปรโมชั่นรายวัน</h1> 
-                </div>
--->
-                <div class="row">
-                    <div class="col-10 mx-auto">
-                        <div id="promotion" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#promotion" data-slide-to="0" class="active"></li>
-                                <li data-target="#promotion" data-slide-to="1"></li>
-                                <li data-target="#promotion" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="./img/new1.jpg" alt="First slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="./img/new2.jpg" alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="./img/new3.jpg" alt="Third slide">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#promotion" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#promotion" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <header class="masthead">
+            <div>
+                <div class="masthead-subheading " style="padding-left: 850px;font-size:25px;padding-top: auto;padding-bottom: auto;">ช่วยหางานให้กับนักศึกษา เพื่อเสริมสร้างการทำงานระหว่างเรียน<br>สร้างเวลาว่างให้เกิดประโยชน์ ระหว่างการศึกษา<br>เเละผ่านพ้นปัญหาด้านการเงินอย่างยั่งยืน</div>
             </div>
-        </section>
+                </header>
 
 
-        <section class="page-section">
-            <div class="container">
-                <div class="text-center">
-                <!--    
-                <h1 style="font-family: 'Kanit', sans-serif;color:white;">โปรโมชั่นรายวัน</h1> 
-                </div>
--->
-                <div class="row">
-                    <div class="col-10 mx-auto">
-                        <div id="promotion" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#promotion" data-slide-to="0" class="active"></li>
-                                <li data-target="#promotion" data-slide-to="1"></li>
-                                <li data-target="#promotion" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="./img/new1.jpg" alt="First slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="./img/new2.jpg" alt="Second slide">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="./img/new3.jpg" alt="Third slide">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#promotion" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#promotion" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        </header>
 
         <!--footer-->
         <!-- Remove the container if you want to extend the Footer to full width. -->

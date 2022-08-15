@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Unijob News</title>
+        <title>Unijob Dowload</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -50,7 +50,7 @@
     <!--แก้-->
         <header class="masthead" style="background-image: url('./img/main01111.jpg'); background-position: center center; height: 700px;">
             <div class="container">
-                <div class="masthead-heading text-uppercase" style="text-align: center;">News</div>
+                <div class="masthead-heading text-uppercase" style="text-align: center;">Dowload</div>
                 </div>
             </div>
         </header>

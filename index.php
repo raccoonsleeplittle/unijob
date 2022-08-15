@@ -34,8 +34,8 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#services" style="font-family: 'Kanit', sans-serif;">หน้าแรก</a></li>
                         <li class="nav-item"><a class="nav-link" href="./about.php" style="font-family: 'Kanit', sans-serif;">เกี่ยวกับ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about" style="font-family: 'Kanit', sans-serif;">ข่าวสาร</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team" style="font-family: 'Kanit', sans-serif;">รีวิว</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./news.php" style="font-family: 'Kanit', sans-serif;">ข่าวสาร</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./review.php" style="font-family: 'Kanit', sans-serif;">รีวิว</a></li>
                         <li class="nav-item"><a class="nav-link" href="register.php" style="font-family: 'Kanit', sans-serif;">สมัครสมาชิก</a></li>
                         <li class="nav-item"><button type="button" class="btn btn-info btn-round" style="font-family: 'Kanit', sans-serif;" data-toggle="modal" data-target="#loginModal">เข้าสู่ระบบ</button></li>
                         
