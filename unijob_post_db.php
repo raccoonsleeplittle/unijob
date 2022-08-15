@@ -1,62 +1,33 @@
 <?php 
-
+    ob_start();
     session_start();
-    require_once 'config/db.php';
+    include('config/server.php');
 
-    if (isset($_POST['signin'])) {
-        $email = $_POST['email'];
-        $password = $_POST['password'];
+            //Check whether the Submit Button is Click or Not
+            if(isset($_POST['submit-post']))
+            {
 
-      
-        if (empty($email)) {
-            $_SESSION['error'] = 'กรุณากรอกอีเมล';
-            header("location: signin.php");
-        } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $_SESSION['error'] = 'รูปแบบอีเมลไม่ถูกต้อง';
-            header("location: signin.php");
-        } else if (empty($password)) {
-            $_SESSION['error'] = 'กรุณากรอกรหัสผ่าน';
-            header("location: signin.php");
-        } else if (strlen($_POST['password']) > 20 || strlen($_POST['password']) < 5) {
-            $_SESSION['error'] = 'รหัสผ่านต้องมีความยาวระหว่าง 5 ถึง 20 ตัวอักษร';
-            header("location: signin.php");
-        } else {
-            try {
+                // 1. รับ data จาก form
+                $typejob=$_POST['typejob'];
+                
+                $hireprice = $_POST['hireprice'];
+                
+                $kindofwork = $_POST['kindofwork'];
+                
+                $email = $_POST['email']; //อยากจะเปลี่ยนเป็นแบบ auto จาก email ที่เก็บใน session ตอน login
+                
+                $code = $_POST['code'];
 
-                $check_data = $conn->prepare("SELECT * FROM users WHERE email = :email");
-                $check_data->bindParam(":email", $email);
-                $check_data->execute();
-                $row = $check_data->fetch(PDO::FETCH_ASSOC);
+                $phone = $_POST['phone'];
 
-                if ($check_data->rowCount() > 0) {
+                $details = mysqli_real_escape_string($conn,$_POST['details']);
 
-                    if ($email == $row['email']) {
-                        if (password_verify($password, $row['password'])) {
-                            if ($row['urole'] == 'admin') {
-                                $_SESSION['admin_login'] = $row['id'];
-                                header("location: admin.php");
-                            } else {
-                                $_SESSION['user_login'] = $row['id'];
-                                header("location: user.php");
-                            }
-                        } else {
-                            $_SESSION['error'] = 'รหัสผ่านผิด';
-                            header("location: signin.php");
-                        }
-                    } else {
-                        $_SESSION['error'] = 'อีเมลผิด';
-                        header("location: signin.php");
-                    }
-                } else {
-                    $_SESSION['error'] = "ไม่มีข้อมูลในระบบ";
-                    header("location: signin.php");
-                }
-
-            } catch(PDOException $e) {
-                echo $e->getMessage();
+                // นำข้อมูลเข้า database
+                    $sql = "INSERT INTO post_db (typejob, hireprice, kindofwork, name, code, phone, details) VALUES ('$typejob','$hireprice','$kindofwork','$name','$code','$phone','$details')";
+                    mysqli_query($conn, $sql);
+        
+                    header('location: post_status.php'); 
+                
             }
-        }
-    }
-
-
+                
 ?>
