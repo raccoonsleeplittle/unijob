@@ -56,12 +56,21 @@
                 </header>
 
 
-                <header class="masthead">
-            <div>
-                <div class="masthead-subheading " style="padding-left: 850px;font-size:25px;padding-top: auto;padding-bottom: auto;">ช่วยหางานให้กับนักศึกษา เพื่อเสริมสร้างการทำงานระหว่างเรียน<br>สร้างเวลาว่างให้เกิดประโยชน์ ระหว่างการศึกษา<br>เเละผ่านพ้นปัญหาด้านการเงินอย่างยั่งยืน</div>
-            </div>
+                <header class="masthead" style="height: 20px;padding-top: 100px;">
+                    <div>
+                        <div class="masthead-subheading" style="padding-left: 800px;font-size:25px;padding-bottom: 50px;">ช่วยหางานให้กับนักศึกษา เพื่อเสริมสร้างการทำงานระหว่างเรียน<br>สร้างเวลาว่างให้เกิดประโยชน์ ระหว่างการศึกษา<br>เเละผ่านพ้นปัญหาด้านการเงินอย่างยั่งยืน</div>
+                    </div>
                 </header>
 
+
+                <header class="masthead" style="height: 20px;padding-top: 150px;">
+                    <div class="container">
+                        <div class="masthead-subheading" style="text-align: center;font-size:25px;">มีงานให้เลือกทำหลายรูปเเบบหลายลักษณะตามความถนัดของนักศึกษาเเละเลือกเวลาได้อย่างอิสระ</div>
+                        <div style="padding-left:80px;text-align:center;">
+                            <a class="btn  btn-xl text-uppercase" href="#services" style="background-color: gray; color: black; font-family: 'Kanit', sans-serif;">สำหรับนักศึกษา</a>
+                        </div>
+                    </div>
+                </header>
 
 
 
