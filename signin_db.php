@@ -43,15 +43,15 @@
                             }
                         } else {
                             $_SESSION['error'] = 'รหัสผ่านผิด';
-                            header("location: index.php.php");
+                            header("location: index.php");
                         }
                     } else {
                         $_SESSION['error'] = 'อีเมลผิด';
-                        header("location: index.php.php");
+                        header("location: index.php");
                     }
                 } else {
                     $_SESSION['error'] = "ไม่มีข้อมูลในระบบ";
-                    header("location: index.php.php");
+                    header("location: index.php");
                 }
 
             } catch(PDOException $e) {

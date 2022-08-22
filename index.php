@@ -37,7 +37,7 @@
                         <li class="nav-item"><a class="nav-link" href="./news.php" style="font-family: 'Kanit', sans-serif;">ข่าวสาร</a></li>
                         <li class="nav-item"><a class="nav-link" href="./review.php" style="font-family: 'Kanit', sans-serif;">รีวิว</a></li>
                         <li class="nav-item"><a class="nav-link" href="register.php" style="font-family: 'Kanit', sans-serif;">สมัครสมาชิก</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./unijob_post.php" style="font-family: 'Kanit', sans-serif;">เริ่มงต้นการใช้งาน</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./unijob_post.php" style="font-family: 'Kanit', sans-serif;">เริ่มต้นการใช้งาน</a></li>
                         <li class="nav-item"><button type="button" class="btn btn-info btn-round" style="font-family: 'Kanit', sans-serif;" data-toggle="modal" data-target="#loginModal">เข้าสู่ระบบ</button></li>
                         
                     </ul>
