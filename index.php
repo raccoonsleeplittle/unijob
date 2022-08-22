@@ -293,6 +293,11 @@
             });
         </script>
 
+        <?php 
+            session_start();
+            require_once 'config/db.php';
+        ?>
+
 
         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -305,17 +310,34 @@
                 <div class="modal-body">
                     <div class="form-title text-center">
                         <h4 style="font-family: 'Kanit', sans-serif;">เข้าสู่ระบบ</h4>
+                        <?php if(isset($_SESSION['error'])) { ?>
+                <div class="alert alert-danger" role="alert">
+                    <?php 
+                        echo $_SESSION['error'];
+                        unset($_SESSION['error']);
+                    ?>
+                        </div>
+                    <?php } ?>
+                    <?php if(isset($_SESSION['success'])) { ?>
+                        <div class="alert alert-success" role="alert">
+                            <?php 
+                                echo $_SESSION['success'];
+                                unset($_SESSION['success']);
+                            ?>
+                        </div>
+                    <?php } ?>
                     </div>
                     <div class="d-flex flex-column text-center">
-                        <form>
+                        <form action="signin_db.php" method="post" name="logintoggle">
                             <div class="form-group" style="text-align:left;">
                                 <a style="font-family: 'Kanit', sans-serif;">บัญชีผู้ใช้งาน</a>
-                                <input type="email" class="form-control" id="username"placeholder="บัญชีผู้ใช้งาน">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="password" placeholder="รหัสผ่าน">
-                            </div>
-                            <button type="button" class="btn btn-info btn-block btn-round">เข้าสู่ระบบ</button>
+                                <input type="email" name="email" class="form-control" id="username"placeholder="บัญชีผู้ใช้งาน">
+                            </div><p> </p>
+                            <div class="form-group" style="text-align:left;">
+                                <a style="font-family: 'Kanit', sans-serif;">รหัสผ่าน</a>
+                                <input type="password" name="password" class="form-control" id="password" placeholder="รหัสผ่าน">
+                            </div><br>
+                            <button type="submit" name="signin" class="btn btn-info btn-block btn-round">เข้าสู่ระบบ</button>
                         </form>
                     </div>
                 <div class="modal-footer d-flex justify-content-center">
@@ -326,3 +348,4 @@
         
     </body>
 </html>
+

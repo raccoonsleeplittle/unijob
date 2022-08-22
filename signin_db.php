@@ -10,16 +10,16 @@
       
         if (empty($email)) {
             $_SESSION['error'] = 'กรุณากรอกอีเมล';
-            header("location: signin.php");
+            header("location: index.php");
         } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $_SESSION['error'] = 'รูปแบบอีเมลไม่ถูกต้อง';
-            header("location: signin.php");
+            header("location: index.php");
         } else if (empty($password)) {
             $_SESSION['error'] = 'กรุณากรอกรหัสผ่าน';
-            header("location: signin.php");
+            header("location: index.php");
         } else if (strlen($_POST['password']) > 20 || strlen($_POST['password']) < 5) {
             $_SESSION['error'] = 'รหัสผ่านต้องมีความยาวระหว่าง 5 ถึง 20 ตัวอักษร';
-            header("location: signin.php");
+            header("location: index.php");
         } else {
             try {
 
@@ -34,22 +34,24 @@
                         if (password_verify($password, $row['password'])) {
                             if ($row['urole'] == 'admin') {
                                 $_SESSION['admin_login'] = $row['id'];
+                                
                                 header("location: admin.php");
                             } else {
                                 $_SESSION['user_login'] = $row['id'];
+                                
                                 header("location: user.php");
                             }
                         } else {
                             $_SESSION['error'] = 'รหัสผ่านผิด';
-                            header("location: signin.php");
+                            header("location: index.php.php");
                         }
                     } else {
                         $_SESSION['error'] = 'อีเมลผิด';
-                        header("location: signin.php");
+                        header("location: index.php.php");
                     }
                 } else {
                     $_SESSION['error'] = "ไม่มีข้อมูลในระบบ";
-                    header("location: signin.php");
+                    header("location: index.php.php");
                 }
 
             } catch(PDOException $e) {

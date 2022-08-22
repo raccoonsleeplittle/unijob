@@ -1,3 +1,14 @@
+<?php 
+  session_start();
+  require_once 'config/db.php';
+
+
+  $user_id = $_SESSION['user_login'];
+  $stmt = $conn->query("SELECT * FROM users WHERE id = $user_id");
+  $stmt->execute();
+  $row = $stmt->fetch(PDO::FETCH_ASSOC);
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -7,6 +18,7 @@
   <title>Bootstrap demo</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link  rel="stylesheet" href="css/post_style.css">
+
 </head>
 
 <body>
@@ -53,9 +65,13 @@
           <a href="#" class="list-group-item list-group-item-action disabled">ติดต่อเจ้าหน้าที่</a>
         </div>
       </div>
+
       <div class="col-9">
         <form action="unijob_post_db.php" method="post">
           <div class="form-group">
+            <a style="background-color: #1E1143; color:white; padding:1%; border-radius: 0.3rem; margin-right: 1rem;" >
+              <?php echo $row['email']; ?>
+            </a>
             <label for="exampleInputEmail1">กรอกรายละเอียดงาน</label>
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
@@ -106,8 +122,8 @@
             </fieldset>
             <div class="row">
               <div class="col-6">
-                <label for="exampleInputPassword1">อีเมลของผู้จ้าง</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="กรุณากรอกอีเมลของผู้จ้าง" name="email" required>
+                <label for="exampleInputPassword1">เบอร์ติดต่อ</label>
+                <input type="tel" class="form-control" name="phone" id="tel" placeholder="กรุณากรอกเบอร์ติดต่อ" pattern="[0-9]{10}" required>
               </div>
               <div class="col-6">
                 <label for="exampleInputPassword1">ใช้โค๊ดโปรโมชั้น</label>
@@ -115,12 +131,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-6">
-              <label for="exampleInputPassword1">เบอร์ติดต่อ</label>
-              <input type="tel" class="form-control" name="phone" id="tel" placeholder="กรุณากรอกเบอร์ติดต่อ" pattern="[0-9]{10}" required>
-            </div>
-          </div>
+          
           <br>
           <div class="row">
             <div class="col-6">
