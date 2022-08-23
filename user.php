@@ -46,7 +46,7 @@
 
             if (isset($_SESSION['user_login'])) {
                 $user_id = $_SESSION['user_login'];
-                $stmt = $conn->query("SELECT * FROM users WHERE id = $user_id");
+                $stmt = $conn->query("SELECT * FROM tab_user WHERE id_card = $user_id");
                 $stmt->execute();
                 $row = $stmt->fetch(PDO::FETCH_ASSOC);
             }
@@ -72,7 +72,7 @@
                     <li class="nav-item"><a class="nav-link" href="register.php" style="font-family: 'Kanit', sans-serif;">สมัครสมาชิก</a></li>
                     <li class="nav-item"><a class="nav-link" href="./unijob_post.php" style="font-family: 'Kanit', sans-serif;">เริ่มงต้นการใช้งาน</a></li>
                     <div class="dropdown btn-user">
-                        <div><button type="button" class="btn btn-user" style="font-family: 'Kanit', sans-serif;"><?php echo $row['firstname'] . ' ' . $row['lastname'] ?></button></div>
+                        <div><button type="button" class="btn btn-user" style="font-family: 'Kanit', sans-serif;"><?php echo $row['name'] ?></button></div>
                         <div class="dropdown-content">
                             <a href="unijob_post.php">โพสต์งาน</a>
                             <a href="#">Link 2</a>

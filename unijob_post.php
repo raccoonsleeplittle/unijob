@@ -4,7 +4,7 @@
 
 
   $user_id = $_SESSION['user_login'];
-  $stmt = $conn->query("SELECT * FROM users WHERE id = $user_id");
+  $stmt = $conn->query("SELECT * FROM tab_user WHERE id_card = $user_id");
   $stmt->execute();
   $row = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
@@ -15,7 +15,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>โพสต์งาน</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link  rel="stylesheet" href="css/post_style.css">
 
@@ -80,7 +80,7 @@
             <div class="row">
               <div class="col-6">
                 <label for="exampleInputPassword1">ประเภทงาน</label>
-                <select class="form-control" name="typejob">
+                <select class="form-control" name="type">
                   <option>งานทั่วไป</option>
                   <option>งานไอที</option>
                   <option>งานพิมเอกสาร</option>
@@ -88,17 +88,17 @@
                 </select>
               </div>
               <div class="col-6">
-                <label for="exampleInputPassword1">ราคาจ้าง</label>
-                <input type="number" class="form-control" id="exampleInputEmail1" placeholder="จำนวนค่าจ้าง" name="hireprice" required
-                oninvalid="this.setCustomValidity('กรุณาใส่ค่าจ้าง')"
-                oninput="this.setCustomValidity('')"/>
+                <form action="/action_page.php">
+                  <label for="term">ช่วงเวลาเริ่ม-จบ</label><br>
+                  <input type="time" id="term" name="term"> - <input type="time" id="term" name="term">
+                </form>
               </div>
             </div>
             <br>
             <label for="exampleInputPassword1">รูปแบบงาน</label>
             <fieldset class="form-group">
               <div class="row">
-                <div class="col-sm-10">
+                <div class="col-6">
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="kindofwork" id="gridRadios1" value="งานตอนนี้" checked>
                     <label class="form-check-label" for="gridRadios1">
@@ -118,35 +118,30 @@
                     </label>
                   </div>
                 </div>
+                <div class="col-6">
+                  <label for="exampleInputPassword1">ราคาจ้าง</label>
+                  <input type="number" class="form-control" id="exampleInputEmail1" placeholder="จำนวนค่าจ้าง" name="hireprice" required
+                  oninvalid="this.setCustomValidity('กรุณาใส่ค่าจ้าง')"
+                  oninput="this.setCustomValidity('')"/>
+                </div>
               </div>
             </fieldset>
+            <br>
             <div class="row">
               <div class="col-6">
-                <label for="exampleInputPassword1">เบอร์ติดต่อ</label>
-                <input type="tel" class="form-control" name="phone" id="tel" placeholder="กรุณากรอกเบอร์ติดต่อ" pattern="[0-9]{10}" required>
+                <label for="exampleFormControlTextarea1">รายละเอียดงานเพิ่มเติม</label>
+                <textarea class="form-control" name="details" id="exampleFormControlTextarea1" rows="3" required></textarea>
               </div>
+            </div>
+            <br>
+            <div class="row">
               <div class="col-6">
-                <label for="exampleInputPassword1">ใช้โค๊ดโปรโมชั้น</label>
-                <input type="number" class="form-control" name="code" placeholder="โค้ด 8 ตัวเลข" pattern="[0-9]{8}" >
+                <label for="exampleFormControlTextarea1">สถานที่ทำงาน</label>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.67256830534!2d100.72485546483372!3d14.037412940163145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d78a4a8713c3f%3A0xf019238243532a0!2sRajamangala%20University%20of%20Technology%20Thanyaburi!5e0!3m2!1sen!2sth!4v1660283801746!5m2!1sen!2sth" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
+            <button type="submit" class="btn btn-primary" name="submit-post">โพสต์งาน</button>
           </div>
-          
-          <br>
-          <div class="row">
-            <div class="col-6">
-              <label for="exampleFormControlTextarea1">รายละเอียดงานเพิ่มเติม</label>
-              <textarea class="form-control" name="details" id="exampleFormControlTextarea1" rows="3" required></textarea>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-6">
-              <label for="exampleFormControlTextarea1">สถานที่ทำงาน</label>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.67256830534!2d100.72485546483372!3d14.037412940163145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d78a4a8713c3f%3A0xf019238243532a0!2sRajamangala%20University%20of%20Technology%20Thanyaburi!5e0!3m2!1sen!2sth!4v1660283801746!5m2!1sen!2sth" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary" name="submit-post">Submit</button>
         </form>
       </div>
     </div>
