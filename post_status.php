@@ -1,5 +1,6 @@
 <?php 
-    include('config/server.php');
+    session_start();
+    include_once 'config/db.php';
 ?>
 
 
@@ -9,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>สถานะงาน</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/post-style.css" >
@@ -61,24 +62,42 @@
             </div>
             <div class="col-9 tl">
                 
-                    <?php
-
-                        $sql = "SELECT * FROM post_db";
-   
-                        try{
-                            $pdo = new PDO($dsn, $username, $password);
-                            $stmt = $pdo->query($sql);
-                            
-                            if($stmt === false){
-                             die("Error");
-                            }
-                            
-                           }catch (PDOException $e){
-                             echo $e->getMessage();
-                           }
-
-                    ?>
-                
+            <!-- เชื่อม database เพื่อดึง เริ่ม-->
+                <?php
+                    $dbname='unijob';
+                        
+                    $dsn = "mysql:host=$servername;dbname=$dbname"; 
+                    // get all users
+                    $sql = "SELECT * FROM tab_announce";
+                    
+                    try{
+                    $pdo = new PDO($dsn, $username, $password);
+                    $stmt = $pdo->query($sql);
+                    
+                    if($stmt === false){
+                        die("Error");
+                    }
+                    
+                    }catch (PDOException $e){
+                        echo $e->getMessage();
+                    }
+                ?>
+            <!-- เชื่อม database เพื่อดึง จบ-->
+            <!-- แสดงข้อมูลจาก database เริ่ม -->
+                <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
+                    <tr>
+                    <td><?php echo htmlspecialchars($row['announce_id']); ?></td>
+                    <td><?php echo htmlspecialchars($row['details']); ?></td>
+                    <td><?php echo htmlspecialchars($row['work_id']); ?></td>
+                    <td><?php echo htmlspecialchars($row['start_date']); ?></td>
+                    <td><?php echo htmlspecialchars($row['end_date']); ?></td>
+                    <td><?php echo htmlspecialchars($row['time']); ?></td>
+                    <td><?php echo htmlspecialchars($row['user_id']); ?></td>
+                    <td><?php echo htmlspecialchars($row['price']); ?></td>
+                    <td><?php echo htmlspecialchars($row['time_stamp']); ?></td>
+                    </tr>
+                <?php endwhile; ?>
+            <!-- แสดงข้อมูลจาก database จบ -->
             </div>
         </div>
     </div>

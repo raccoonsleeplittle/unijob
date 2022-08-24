@@ -29,7 +29,7 @@
             $stmt->bindParam(":price", $price);
             $stmt->execute();
             $_SESSION['success-post'] = "คุณได้โพสต์งานสำเร็จ";
-            header("location: unijob_post.php");
+            header("location: post_status.php");
         } catch(PDOException $e) {
             echo $e->getMessage();
         }
