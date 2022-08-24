@@ -1,6 +1,11 @@
 <?php 
     session_start();
     include_once 'config/db.php';
+
+    $user_id = $_SESSION['user_login'];
+    $stmt = $conn->query("SELECT * FROM tab_user WHERE id_card = $user_id");
+    $stmt->execute();
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
 
 
@@ -68,7 +73,7 @@
                         
                     $dsn = "mysql:host=$servername;dbname=$dbname"; 
                     // get all users
-                    $sql = "SELECT * FROM tab_announce";
+                    $sql = "SELECT * FROM tab_announce WHERE user_id = $user_id";
                     
                     try{
                     $pdo = new PDO($dsn, $username, $password);
@@ -84,6 +89,9 @@
                 ?>
             <!-- เชื่อม database เพื่อดึง จบ-->
             <!-- แสดงข้อมูลจาก database เริ่ม -->
+                <a style="background-color: #1E1143; color:white; padding:1%; border-radius: 0.3rem; margin-right: 1rem;" >
+                สถานะงานของคุณ : <?php echo $row['email']; ?>
+                </a>
                 <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
                     <tr>
                     <td><?php echo htmlspecialchars($row['announce_id']); ?></td>
