@@ -50,8 +50,8 @@
                 <div class="masthead-heading text-uppercase">แพลตฟอร์มสำหรับหางานให้นักศึกษา</div>
                 <div  class="masthead-subheading">มีงานให้เลือกหลากหลายประเภทตามความสามารถ ความต้องการ และมีความปลอดภัย<br>ทำงานแบบระยะชั่วคราว แบบ Freelance โดยไม่ต้องห่วงเรื่องปัญหาเวลาในการศึกษาอีกต่อไป</div>
                 <div style="padding-left:80px;">
-                    <a class="btn  btn-xl text-uppercase" href="#services" style="background-color: gray; color: black; font-family: 'Kanit', sans-serif;border-radius:120px">สำหรับนักศึกษา</a><a style="padding-right: 80px;"></a>
-                    <a class="btn  btn-xl text-uppercase" href="#services" style="background-color: #513ABF; color: white; font-family: 'Kanit', sans-serif;border-radius:120px">สำหรับผู้ใช้งาน/นายจ้าง</a>
+                    <a class="btn  btn-xl text-uppercase" href="./stu.php" style="background-color: gray; color: black; font-family: 'Kanit', sans-serif;border-radius:120px">สำหรับนักศึกษา</a><a style="padding-right: 80px;"></a>
+                    <a class="btn  btn-xl text-uppercase" href="./cus.php" style="background-color: #513ABF; color: white; font-family: 'Kanit', sans-serif;border-radius:120px">สำหรับผู้ใช้งาน/นายจ้าง</a>
                 </div>
             </div>
         </header>

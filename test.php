@@ -27,6 +27,29 @@
         <a href="main.php" class="header-main">ศูนย์ช่วยเหลือ</a>
         <a href="login.php" class="header-login">เข้าสู่ระบบ</a>
         <a href="register.php" class="header-sign">ลงทะเบียน</a>
+
+
+        <div class="row">
+              <div class="col-6">
+                <label for="exampleInputPassword1">ประเภทงาน</label>
+                <select class="form-control" name="typejob">
+                  <option>งานทั่วไป</option>
+                  <option>งานไอที</option>
+                  <option>งานพิมเอกสาร</option>
+                  <option>อื่น</option>
+                </select>
+
+
+
+                <div class="col-6">
+                <label for="exampleInputPassword1">ราคาจ้าง</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" placeholder="จำนวนค่าจ้าง" name="hireprice" required
+                oninvalid="this.setCustomValidity('กรุณาใส่ค่าจ้าง')"
+                oninput="this.setCustomValidity('')"/>
+              </div>
+            </div>
+
+
     </div>
 </body>
 </html>

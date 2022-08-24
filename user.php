@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
 
 
     <meta charset="utf-8" />
@@ -71,15 +71,30 @@
                     <li class="nav-item"><a class="nav-link" href="./review.php" style="font-family: 'Kanit', sans-serif;">รีวิว</a></li>
                     <li class="nav-item"><a class="nav-link" href="register.php" style="font-family: 'Kanit', sans-serif;">สมัครสมาชิก</a></li>
                     <li class="nav-item"><a class="nav-link" href="./unijob_post.php" style="font-family: 'Kanit', sans-serif;">เริ่มงต้นการใช้งาน</a></li>
-                    <div class="dropdown btn-user">
-                        <div><button type="button" class="btn btn-user" style="font-family: 'Kanit', sans-serif;"><?php echo $row['firstname'] . ' ' . $row['lastname'] ?></button></div>
-                        <div class="dropdown-content">
-                            <a href="unijob_post.php">โพสต์งาน</a>
-                            <a href="#">Link 2</a>
-                            <a href="logout.php" style="font-family: 'Kanit', sans-serif;" class="logout">ออกจากระบบ</a>
-                        </div>
-                    </div>
+                    
+                    
+                    <!--<div class="dropdown btn-user">
+                        <ul>
+                            <li>
+                                <button type="button" class="btn btn-user" style="font-family: 'Kanit', sans-serif; background-color: black;color: white;"><?php echo $row['firstname'] . ' ' . $row['lastname'] ?></button>          
+                            </li>
+                        </ul>                    
+                    </div>-->
                     <li class="nav-item"></li>
+
+                    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+  <?php echo $row['firstname'] . ' ' . $row['lastname'] ?>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+
+                    <!-- Nav Item - Pages Collapse Menu -->
+                  
                 </ul>
             </div>
         </div>
