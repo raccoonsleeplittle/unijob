@@ -80,7 +80,7 @@
             <div class="row">
               <div class="col-6">
                 <label for="exampleInputPassword1">ประเภทงาน</label>
-                <select class="form-control" name="type">
+                <select class="form-control" name="category"> <!--ยังไม่มี table ใส่-->
                   <option>งานทั่วไป</option>
                   <option>งานไอที</option>
                   <option>งานพิมเอกสาร</option>
@@ -88,17 +88,17 @@
                 </select>
               </div>
               <div class="col-6">
-                <form action="/action_page.php">
-                  <label for="term">ช่วงเวลาเริ่ม-จบ</label><br>
-                  <input type="time" id="term" name="term"> - <input type="time" id="term" name="term">
-                </form>
-              </div>
+                  <label for="exampleInputPassword1">ราคาจ้าง</label>
+                  <input type="number" class="form-control" id="exampleInputEmail1" placeholder="จำนวนค่าจ้าง" name="price" required
+                  oninvalid="this.setCustomValidity('กรุณาใส่ค่าจ้าง')"
+                  oninput="this.setCustomValidity('')"/>
+                </div>
             </div>
             <br>
-            <label for="exampleInputPassword1">รูปแบบงาน</label>
             <fieldset class="form-group">
               <div class="row">
                 <div class="col-6">
+                  <label for="exampleInputPassword1">รูปแบบงาน</label>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="kindofwork" id="gridRadios1" value="งานตอนนี้" checked>
                     <label class="form-check-label" for="gridRadios1">
@@ -119,13 +119,19 @@
                   </div>
                 </div>
                 <div class="col-6">
-                  <label for="exampleInputPassword1">ราคาจ้าง</label>
-                  <input type="number" class="form-control" id="exampleInputEmail1" placeholder="จำนวนค่าจ้าง" name="hireprice" required
-                  oninvalid="this.setCustomValidity('กรุณาใส่ค่าจ้าง')"
-                  oninput="this.setCustomValidity('')"/>
-                </div>
+                  <label for="term">ช่วงเวลา</label><br>
+                  เริ่ม <input type="datetime-local" id="start_date" name="start_date"><br>
+                  จบ <input type="datetime-local" id="end_date" name="end_date">
+              </div>
               </div>
             </fieldset>
+            <br>
+            <div class="row">
+              <div class="col-6">
+                <label for="exampleFormControlTextarea1">เวลาที่ต้องการทำงาน</label><br>
+                <input type="time" id="time" name="time">
+              </div>
+            </div>
             <br>
             <div class="row">
               <div class="col-6">

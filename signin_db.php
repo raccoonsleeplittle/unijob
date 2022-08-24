@@ -40,7 +40,7 @@
                                 header("location: student.php");
                             }else if ($row['user_type_id'] == '3') {
                                 $_SESSION['user_login'] = $row['id_card'];
-                                header("location: student.php");
+                                header("location: user.php");
                             } else {
                                 $_SESSION['error'] = 'ไม่มีข้อมูลในระบบ';
                             }
