@@ -36,8 +36,6 @@
                         <li class="nav-item"><a class="nav-link" href="./about.php" style="font-family: 'Kanit', sans-serif;">เกี่ยวกับ</a></li>
                         <li class="nav-item"><a class="nav-link" href="./news.php" style="font-family: 'Kanit', sans-serif;">ข่าวสาร</a></li>
                         <li class="nav-item"><a class="nav-link" href="./review.php" style="font-family: 'Kanit', sans-serif;">รีวิว</a></li>
-                        <li class="nav-item"><a class="nav-link" href="register.php" style="font-family: 'Kanit', sans-serif;">สมัครสมาชิก</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./unijob_post.php" style="font-family: 'Kanit', sans-serif;">เริ่มต้นการใช้งาน</a></li>
                         <li class="nav-item"><button type="button" class="btn btn-info btn-round" style="font-family: 'Kanit', sans-serif;" data-toggle="modal" data-target="#registerModal">สมัครสมาชิก</button></li>
                         <li class="nav-item"><button type="button" class="btn btn-info btn-round" style="font-family: 'Kanit', sans-serif;" data-toggle="modal" data-target="#loginModal">เข้าสู่ระบบ</button></li>
                         
@@ -51,8 +49,8 @@
                 <div class="masthead-heading text-uppercase">แพลตฟอร์มสำหรับหางานให้นักศึกษา</div>
                 <div  class="masthead-subheading">มีงานให้เลือกหลากหลายประเภทตามความสามารถ ความต้องการ และมีความปลอดภัย<br>ทำงานแบบระยะชั่วคราว แบบ Freelance โดยไม่ต้องห่วงเรื่องปัญหาเวลาในการศึกษาอีกต่อไป</div>
                 <div style="padding-left:80px;">
-                    <a class="btn  btn-xl text-uppercase" href="./stu.php" style="background-color: gray; color: black; font-family: 'Kanit', sans-serif;border-radius:120px">สำหรับนักศึกษา</a><a style="padding-right: 80px;"></a>
-                    <a class="btn  btn-xl text-uppercase" href="./cus.php" style="background-color: #513ABF; color: white; font-family: 'Kanit', sans-serif;border-radius:120px">สำหรับผู้ใช้งาน/นายจ้าง</a>
+                    <a class="btn  btn-xl text-uppercase" href="#services" style="background-color: gray; color: black; font-family: 'Kanit', sans-serif;border-radius:120px">สำหรับนักศึกษา</a><a style="padding-right: 80px;"></a>
+                    <a class="btn  btn-xl text-uppercase" href="#services" style="background-color: #513ABF; color: white; font-family: 'Kanit', sans-serif;border-radius:120px">สำหรับผู้ใช้งาน/นายจ้าง</a>
                 </div>
             </div>
         </header>
@@ -346,8 +344,11 @@
                 </div>
             </div>
         </div>
-<!-- register form -->
-        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+
+                    <!-- register form -->
+                    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header border-bottom-0">
@@ -357,7 +358,7 @@
                     </div>
                 <div class="modal-body">
                     <div class="form-title text-center">
-                        <h4 style="font-family: 'Kanit', sans-serif;">สมัครสมาชิก</h4>
+                        <h4 style="font-family: 'Kanit', sans-serif;">เข้าสู่ระบบ</h4>
                         <?php if(isset($_SESSION['error'])) { ?>
                 <div class="alert alert-danger" role="alert">
                     <?php 
@@ -376,48 +377,24 @@
                     <?php } ?>
                     </div>
                     <div class="d-flex flex-column text-center">
-                    <div class="signup d-flex flex-column text-center">
-                        <form action="signup_db.php" method="post" name="registerModal">
+                        <form action="signin_db.php" method="post" name="registertoggle">
                             <div class="form-group" style="text-align:left;">
-                                <a style="font-family: 'Kanit', sans-serif;">เลขบัตรประจำตัวประชาชน</a>
-                                <input type="idcard" name="idcard" class="form-control" id="idcard"placeholder="เลขบัตรประจำตัวประชาชน">
+                                <a style="font-family: 'Kanit', sans-serif;">บัญชีผู้ใช้งาน</a>
+                                <input type="email" name="email" class="form-control" id="username"placeholder="บัญชีผู้ใช้งาน">
                             </div><p> </p>
-                            <form action="signup_db.php" method="post" name="registerModal">
-                            <div class="form-group" style="text-align:left;">
-                                <a style="font-family: 'Kanit', sans-serif;">ชื่อ-สกุล</a>
-                                <input type="name" name="name" class="form-control" id="name"placeholder="ชื่อสกุล">
-                            </div><p> </p>
-                            <form action="signup_db.php" method="post" name="registerModal">
-                            <div class="form-group" style="text-align:left;">
-                                <a style="font-family: 'Kanit', sans-serif;">อีเมล์</a>
-                                <input type="email" name="email" class="form-control" id="email"placeholder="อีเมล์">
-                            </div><p> </p>
-                            <form action="signup_db.php" method="post" name="registerModal">
                             <div class="form-group" style="text-align:left;">
                                 <a style="font-family: 'Kanit', sans-serif;">รหัสผ่าน</a>
-                                <input type="password" name="password" class="form-control" id="password"placeholder="รหัสผ่าน">
-                            </div><p> </p>
-                            <form action="signup_db.php" method="post" name="registerModal">
-                            <div class="form-group" style="text-align:left;">
-                                <a style="font-family: 'Kanit', sans-serif;">ยืนยันรหัสผ่าน</a>
-                                <input type="password" name="c_password" class="form-control" id="c_password"placeholder="ยืนยันรหัสผ่าน">
-                            </div><p> </p>
-                            <form action="signup_db.php" method="post" name="registerModal">
-                            <div class="form-group" style="text-align:left;">
-                                <a style="font-family: 'Kanit', sans-serif;">เบอร์โทร</a>
-                                <input type="tel" name="phone_number" class="form-control" id="phone_number"placeholder="เบอร์โทร">
-                            </div><p> </p>
-                            <button type="submit" name="signup" class="signup btn btn-info btn-block btn-round">สมัครสมาชิก</button>
-                    </div>
+                                <input type="password" name="password" class="form-control" id="password" placeholder="รหัสผ่าน">
+                            </div><br>
+                            <button type="submit" name="signin" class="btn btn-info btn-block btn-round">เข้าสู่ระบบ</button>
                         </form>
                     </div>
                 <div class="modal-footer d-flex justify-content-center">
-                    <div class="signup-section">หากคุณเป็นสมาชิกอยู่แล้ว ?<a href="#a" class="text-info">เข้าสู่ระบบ</a>.</div>
-                </div>
-            </div>
+                    <div class="signup-section">ยังไม่ได้เป็นสมาชิกในระบบ ?<a href="#a" class="text-info"> สมัครสมาชิก</a>.</div>
                 </div>
             </div>
         </div>
+
         
     </body>
 </html>
